@@ -7,7 +7,7 @@ use App\Models\UserInterface;
 class UserService implements UserServiceInterface
 {
     public function __construct(
-        private UserInterface $user,
+        private UserInterface $user
     ) {}
 
     /**
