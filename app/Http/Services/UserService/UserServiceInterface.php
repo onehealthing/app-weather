@@ -2,6 +2,8 @@
 
 namespace App\Http\Services\UserService;
 
+use App\Models\User;
+
 interface UserServiceInterface
 {
     /**
@@ -9,7 +11,7 @@ interface UserServiceInterface
      * @param string $email
      * @param string $password
      *
-     * @return void
+     * @return \App\Models\User
      */
-    public function register(string $name, string $email, string $password): void;
+    public function register(string $name, string $email, string $password): User;
 }

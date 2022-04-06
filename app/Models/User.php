@@ -51,11 +51,11 @@ class User extends Authenticatable implements UserInterface
      * @param string $email
      * @param string $password
      *
-     * @return void
+     * @return \App\Models\User
      */
-    public function store(string $name, string $email, string $password): void
+    public function store(string $name, string $email, string $password): User
     {
-        $this->create([
+        return $this->create([
             'name' => $name,
             'email' => $email,
             'password' => bcrypt($password),
