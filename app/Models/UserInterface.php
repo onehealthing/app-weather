@@ -9,7 +9,7 @@ interface UserInterface
      * @param string $email
      * @param string $password
      *
-     * @return void
+     * @return \App\Models\User
      */
-    public function store(string $name, string $email, string $password): void;
+    public function store(string $name, string $email, string $password): User;
 }

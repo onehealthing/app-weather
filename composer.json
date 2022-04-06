@@ -41,6 +41,7 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi",
+            "@php artisan test --coverage-html tests/coverage",
             "@php artisan security:check"
         ],
         "post-update-cmd": [
